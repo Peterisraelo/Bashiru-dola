@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bashiru Dola</title>
+        <link href="Bashiru.css" media="screen and (min-width: 901px)" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+HK&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="under500.css" media="screen and (max-width:500px)" rel="stylesheet">
+        <link href="under700.css" media="screen and (min-width: 501px)and (max-width:700px)" rel="stylesheet">
+        <link href="under900.css" media="screen and (min-width:701px) and (max-width: 900px" rel="stylesheet">
+    </head>
+    <body>
+        <div class="heading-section">
+            <h2 class="bashiru-heading">Bashiru Dola</h2>
+        </div>
+        <div class="intro-section">
+            <p class="first-para">Currency converter in your pocket.</p>
+        </div>
+        <div class="convert-section">
+            <p class="para">Enter amount:</p>
+            <input class="currency-from" type="number" placeholder="0.00">
+            <select class="currency-select-from" name="currency">
+                <option value>--Select a Currency--</option>
+            </select>
+            <p class="para-to">To:</p>
+            <select class="currency-select-to">
+                <option value>--Select a Currency--</option>
+            </select>
+            <button class="final">Convert</button>
+        </div>
+        <div class="result-section">
+            <p class="result"></p>
+        </div>
+        <script src="Bashiru.js"></script>
+    </body>
+</html>

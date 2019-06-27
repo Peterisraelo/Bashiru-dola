@@ -1,0 +1,64 @@
+body{
+    margin: 0 !important;
+    background-color:#F4F8FC;
+}
+.bashiru-heading{
+    margin-left: 15px;
+    font-family: 'Noto Sans HK','Arial';
+    color:#022B69;
+    font-size: 28px;
+}
+.first-para{
+    font-family: 'Noto Sans HK','Arial';
+    margin-left: 15px;
+}
+.para{
+    font-family: 'Noto Sans HK','Arial';
+    margin-left: 15px;
+}
+.currency-from{
+    font-size: 15px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-family: 'Noto Sans HK','Arial';
+    margin-left: 15px;
+    display: block;
+    margin-bottom: 20px;
+}
+.currency-select-from{
+    margin-left: 15px;
+    font-family: 'Noto Sans HK','Arial';
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background-color: white;
+    color: #0066f5;
+    font-size: 15px;
+    width: 70%;
+}
+.para-to{
+    margin-left: 15px;
+    font-family: 'Noto Sans HK','Arial';
+}
+.currency-select-to{
+    margin-left: 15px;
+    font-family: 'Noto Sans HK','Arial';
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background-color: white;
+    color: #0066f5;
+    font-size: 15px;
+    width: 70%;
+    display: block;
+    margin-bottom: 20px;
+}
+button{
+    font-family: 'Noto Sans HK','Arial';
+    margin-left:15px;
+    font-size: 15px;
+    width: 20%;
+    color: white;
+    background-color: #0066f5;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 6px;
+}
