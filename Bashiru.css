@@ -64,3 +64,13 @@ button{
     width: 20%;
     border-radius: 4px;
 }
+.result{
+    width:40%;
+    font-family: 'Noto Sans HK','Arial';
+    font-size: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background-color: white;
+    color: #0066f5;
+    margin-left: 40px;
+}

@@ -12,6 +12,28 @@ var convertnow = document.querySelector(".final");
 var result = document.querySelector(".result");
 var answer;
 var currentexchangerates;
+var curfro;
+var curto;
+var acamount;
+
+/*Format function*/
+
+function formatMoney(amount, decimalCount = 2, decimal = ".", thousands = ",") {
+     try {
+       decimalCount = Math.abs(decimalCount);
+       decimalCount = isNaN(decimalCount) ? 2 : decimalCount;
+   
+       const negativeSign = amount < 0 ? "-" : "";
+   
+       let i = parseInt(amount = Math.abs(Number(amount) || 0).toFixed(decimalCount)).toString();
+       let j = (i.length > 3) ? i.length % 3 : 0;
+   
+       return negativeSign + (j ? i.substr(0, j) + thousands : '') + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + thousands) + (decimalCount ? decimal + Math.abs(amount - i).toFixed(decimalCount).slice(2) : "");
+     } catch (e) {
+       console.log(e)
+     }
+}
+     /*Format function end*/
 
 request.onload = function(){
      data = JSON.parse(this.response);
@@ -45,13 +67,20 @@ request.onload = function(){
      request2.onload = function(){
           var data2 = JSON.parse(request2.response);
           currentexchangerates = data2.rates;
-          console.log(currentexchangerates); 
 
           /*Trying something here*/
 
           convertnow.addEventListener("click",function(){
-               var acamount = currentvalue.value;
-               answer = (acamount/courfr) 
+               acamount = currentvalue.value;
+
+               console.log(acamount);
+               curfro = currencyselectfrom.value;
+               curto = currencyselectto.value;
+
+               answer = (acamount/currentexchangerates[curfro]) * currentexchangerates[curto];
+               console.log(answer);
+               answer = formatMoney(answer);
+               result.textContent = answer + " " +curfro;
 
           })
           /*Still trying*/

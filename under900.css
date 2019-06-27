@@ -62,3 +62,13 @@ button{
     padding-bottom: 6px;
     border-radius: 6px;
 }
+.result{
+    margin-left: 15px;
+    font-family: 'Noto Sans HK','Arial';
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background-color: white;
+    color: #0066f5;
+    font-size: 20px;
+    width: 70%;
+}
